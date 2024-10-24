@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# SPDX-FileCopyrightText: 2024 Koara168545 <itkmark7@gmail.com>
+# SPDX-FileCopyrightText: 2024 Koara168 <itkmark7@gmail.com>
 
 import  sys
 
