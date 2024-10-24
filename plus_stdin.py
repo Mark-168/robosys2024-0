@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Koara168545 <itkmark7@gmail.com>
+
 import  sys
 
 ans = 0
