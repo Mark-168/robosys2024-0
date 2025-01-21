@@ -1,0 +1,21 @@
+[0.340s] Invoking command in '/home/koara/ros2_ws/build/person_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/koara/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --build /home/koara/ros2_ws/build/person_msgs -- -j12 -l12
+[0.607s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.645s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.645s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.915s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.917s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.924s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.932s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.907s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.944s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[3.944s]   rosidl_generate_interfaces() the passed file 'srv/Query.srv' doesn't exist
+[3.944s]   relative to the CMAKE_CURRENT_SOURCE_DIR
+[3.944s]   '/home/koara/ros2_ws/src/person_msgs'
+[3.944s] Call Stack (most recent call first):
+[3.944s]   CMakeLists.txt:27 (rosidl_generate_interfaces)
+[3.944s] 
+[3.944s] 
+[3.947s] -- Configuring incomplete, errors occurred!
+[3.947s] See also "/home/koara/ros2_ws/build/person_msgs/CMakeFiles/CMakeOutput.log".
+[3.971s] make: *** [Makefile:748: cmake_check_build_system] Error 1
+[3.974s] Invoked command in '/home/koara/ros2_ws/build/person_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/koara/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --build /home/koara/ros2_ws/build/person_msgs -- -j12 -l12
