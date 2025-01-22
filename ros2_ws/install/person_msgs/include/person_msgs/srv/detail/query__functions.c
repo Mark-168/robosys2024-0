@@ -10,21 +10,14 @@
 
 #include "rcutils/allocator.h"
 
-// Include directives for member types
-// Member `name`
-#include "rosidl_runtime_c/string_functions.h"
-
 bool
 person_msgs__srv__Query_Request__init(person_msgs__srv__Query_Request * msg)
 {
   if (!msg) {
     return false;
   }
-  // name
-  if (!rosidl_runtime_c__String__init(&msg->name)) {
-    person_msgs__srv__Query_Request__fini(msg);
-    return false;
-  }
+  // light
+  // value
   return true;
 }
 
@@ -34,8 +27,8 @@ person_msgs__srv__Query_Request__fini(person_msgs__srv__Query_Request * msg)
   if (!msg) {
     return;
   }
-  // name
-  rosidl_runtime_c__String__fini(&msg->name);
+  // light
+  // value
 }
 
 bool
@@ -44,10 +37,12 @@ person_msgs__srv__Query_Request__are_equal(const person_msgs__srv__Query_Request
   if (!lhs || !rhs) {
     return false;
   }
-  // name
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->name), &(rhs->name)))
-  {
+  // light
+  if (lhs->light != rhs->light) {
+    return false;
+  }
+  // value
+  if (lhs->value != rhs->value) {
     return false;
   }
   return true;
@@ -61,12 +56,10 @@ person_msgs__srv__Query_Request__copy(
   if (!input || !output) {
     return false;
   }
-  // name
-  if (!rosidl_runtime_c__String__copy(
-      &(input->name), &(output->name)))
-  {
-    return false;
-  }
+  // light
+  output->light = input->light;
+  // value
+  output->value = input->value;
   return true;
 }
 
@@ -251,7 +244,8 @@ person_msgs__srv__Query_Response__init(person_msgs__srv__Query_Response * msg)
   if (!msg) {
     return false;
   }
-  // age
+  // color
+  // total
   return true;
 }
 
@@ -261,7 +255,8 @@ person_msgs__srv__Query_Response__fini(person_msgs__srv__Query_Response * msg)
   if (!msg) {
     return;
   }
-  // age
+  // color
+  // total
 }
 
 bool
@@ -270,8 +265,12 @@ person_msgs__srv__Query_Response__are_equal(const person_msgs__srv__Query_Respon
   if (!lhs || !rhs) {
     return false;
   }
-  // age
-  if (lhs->age != rhs->age) {
+  // color
+  if (lhs->color != rhs->color) {
+    return false;
+  }
+  // total
+  if (lhs->total != rhs->total) {
     return false;
   }
   return true;
@@ -285,8 +284,10 @@ person_msgs__srv__Query_Response__copy(
   if (!input || !output) {
     return false;
   }
-  // age
-  output->age = input->age;
+  // color
+  output->color = input->color;
+  // total
+  output->total = input->total;
   return true;
 }
 

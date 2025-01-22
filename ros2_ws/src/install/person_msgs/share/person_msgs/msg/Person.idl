@@ -6,9 +6,9 @@
 module person_msgs {
   module msg {
     struct Person {
-      string name;
+      uint8 light;
 
-      uint8 age;
+      uint8 color;
     };
   };
 };

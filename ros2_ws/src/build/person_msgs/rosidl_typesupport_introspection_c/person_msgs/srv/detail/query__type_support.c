@@ -12,10 +12,6 @@
 #include "person_msgs/srv/detail/query__struct.h"
 
 
-// Include directives for member types
-// Member `name`
-#include "rosidl_runtime_c/string_functions.h"
-
 #ifdef __cplusplus
 extern "C"
 {
@@ -37,14 +33,14 @@ void Query_Request__rosidl_typesupport_introspection_c__Query_Request_fini_funct
 
 static rosidl_typesupport_introspection_c__MessageMember Query_Request__rosidl_typesupport_introspection_c__Query_Request_message_member_array[1] = {
   {
-    "name",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    "light",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(person_msgs__srv__Query_Request, name),  // bytes offset in struct
+    offsetof(person_msgs__srv__Query_Request, light),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -123,14 +119,14 @@ void Query_Response__rosidl_typesupport_introspection_c__Query_Response_fini_fun
 
 static rosidl_typesupport_introspection_c__MessageMember Query_Response__rosidl_typesupport_introspection_c__Query_Response_message_member_array[1] = {
   {
-    "age",  // name
+    "color",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(person_msgs__srv__Query_Response, age),  // bytes offset in struct
+    offsetof(person_msgs__srv__Query_Response, color),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

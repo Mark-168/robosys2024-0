@@ -32,10 +32,14 @@ cdr_serialize(
   const person_msgs::msg::Person & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: name
-  cdr << ros_message.name;
-  // Member: age
-  cdr << ros_message.age;
+  // Member: light
+  cdr << ros_message.light;
+  // Member: value
+  cdr << ros_message.value;
+  // Member: color
+  cdr << ros_message.color;
+  // Member: total
+  cdr << ros_message.total;
   return true;
 }
 
@@ -45,11 +49,17 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   person_msgs::msg::Person & ros_message)
 {
-  // Member: name
-  cdr >> ros_message.name;
+  // Member: light
+  cdr >> ros_message.light;
 
-  // Member: age
-  cdr >> ros_message.age;
+  // Member: value
+  cdr >> ros_message.value;
+
+  // Member: color
+  cdr >> ros_message.color;
+
+  // Member: total
+  cdr >> ros_message.total;
 
   return true;
 }
@@ -67,13 +77,27 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: name
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.name.size() + 1);
-  // Member: age
+  // Member: light
   {
-    size_t item_size = sizeof(ros_message.age);
+    size_t item_size = sizeof(ros_message.light);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: value
+  {
+    size_t item_size = sizeof(ros_message.value);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: color
+  {
+    size_t item_size = sizeof(ros_message.color);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: total
+  {
+    size_t item_size = sizeof(ros_message.total);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -96,19 +120,28 @@ max_serialized_size_Person(
   (void)full_bounded;
 
 
-  // Member: name
+  // Member: light
   {
     size_t array_size = 1;
 
-    full_bounded = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
-  // Member: age
+  // Member: value
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: color
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: total
   {
     size_t array_size = 1;
 

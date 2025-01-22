@@ -37,41 +37,41 @@ struct Person_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->name = "";
-      this->age = 0;
+      this->light = 0;
+      this->color = 0;
     }
   }
 
   explicit Person_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : name(_alloc)
   {
+    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->name = "";
-      this->age = 0;
+      this->light = 0;
+      this->color = 0;
     }
   }
 
   // field types and members
-  using _name_type =
-    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
-  _name_type name;
-  using _age_type =
+  using _light_type =
     uint8_t;
-  _age_type age;
+  _light_type light;
+  using _color_type =
+    uint8_t;
+  _color_type color;
 
   // setters for named parameter idiom
-  Type & set__name(
-    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
-  {
-    this->name = _arg;
-    return *this;
-  }
-  Type & set__age(
+  Type & set__light(
     const uint8_t & _arg)
   {
-    this->age = _arg;
+    this->light = _arg;
+    return *this;
+  }
+  Type & set__color(
+    const uint8_t & _arg)
+  {
+    this->color = _arg;
     return *this;
   }
 
@@ -117,10 +117,10 @@ struct Person_
   // comparison operators
   bool operator==(const Person_ & other) const
   {
-    if (this->name != other.name) {
+    if (this->light != other.light) {
       return false;
     }
-    if (this->age != other.age) {
+    if (this->color != other.color) {
       return false;
     }
     return true;

@@ -11,22 +11,14 @@
 #include "rcutils/allocator.h"
 
 
-// Include directives for member types
-// Member `name`
-#include "rosidl_runtime_c/string_functions.h"
-
 bool
 person_msgs__msg__Person__init(person_msgs__msg__Person * msg)
 {
   if (!msg) {
     return false;
   }
-  // name
-  if (!rosidl_runtime_c__String__init(&msg->name)) {
-    person_msgs__msg__Person__fini(msg);
-    return false;
-  }
-  // age
+  // light
+  // color
   return true;
 }
 
@@ -36,9 +28,8 @@ person_msgs__msg__Person__fini(person_msgs__msg__Person * msg)
   if (!msg) {
     return;
   }
-  // name
-  rosidl_runtime_c__String__fini(&msg->name);
-  // age
+  // light
+  // color
 }
 
 bool
@@ -47,14 +38,12 @@ person_msgs__msg__Person__are_equal(const person_msgs__msg__Person * lhs, const 
   if (!lhs || !rhs) {
     return false;
   }
-  // name
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->name), &(rhs->name)))
-  {
+  // light
+  if (lhs->light != rhs->light) {
     return false;
   }
-  // age
-  if (lhs->age != rhs->age) {
+  // color
+  if (lhs->color != rhs->color) {
     return false;
   }
   return true;
@@ -68,14 +57,10 @@ person_msgs__msg__Person__copy(
   if (!input || !output) {
     return false;
   }
-  // name
-  if (!rosidl_runtime_c__String__copy(
-      &(input->name), &(output->name)))
-  {
-    return false;
-  }
-  // age
-  output->age = input->age;
+  // light
+  output->light = input->light;
+  // color
+  output->color = input->color;
   return true;
 }
 

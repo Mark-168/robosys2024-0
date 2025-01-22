@@ -27,11 +27,11 @@ inline const char * name<person_msgs::msg::Person>()
 
 template<>
 struct has_fixed_size<person_msgs::msg::Person>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct has_bounded_size<person_msgs::msg::Person>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct is_message<person_msgs::msg::Person>

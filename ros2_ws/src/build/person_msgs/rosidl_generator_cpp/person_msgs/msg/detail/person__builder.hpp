@@ -20,15 +20,15 @@ namespace msg
 namespace builder
 {
 
-class Init_Person_age
+class Init_Person_color
 {
 public:
-  explicit Init_Person_age(::person_msgs::msg::Person & msg)
+  explicit Init_Person_color(::person_msgs::msg::Person & msg)
   : msg_(msg)
   {}
-  ::person_msgs::msg::Person age(::person_msgs::msg::Person::_age_type arg)
+  ::person_msgs::msg::Person color(::person_msgs::msg::Person::_color_type arg)
   {
-    msg_.age = std::move(arg);
+    msg_.color = std::move(arg);
     return std::move(msg_);
   }
 
@@ -36,16 +36,16 @@ private:
   ::person_msgs::msg::Person msg_;
 };
 
-class Init_Person_name
+class Init_Person_light
 {
 public:
-  Init_Person_name()
+  Init_Person_light()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Person_age name(::person_msgs::msg::Person::_name_type arg)
+  Init_Person_color light(::person_msgs::msg::Person::_light_type arg)
   {
-    msg_.name = std::move(arg);
-    return Init_Person_age(msg_);
+    msg_.light = std::move(arg);
+    return Init_Person_color(msg_);
   }
 
 private:
@@ -63,7 +63,7 @@ template<>
 inline
 auto build<::person_msgs::msg::Person>()
 {
-  return person_msgs::msg::builder::Init_Person_name();
+  return person_msgs::msg::builder::Init_Person_light();
 }
 
 }  // namespace person_msgs

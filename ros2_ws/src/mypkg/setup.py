@@ -23,8 +23,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
     'console_scripts': [
-        'talker = mypkg.talker:main',
-        'listener = mypkg.listener:main',
+        'range = mypkg.range:main',
+        'test = mypkg.test:main',
+        'range02 = mypkg.range02:main',
+        'test02 = mypkg.test02:main',
         ],
     },
 )

@@ -12,10 +12,6 @@
 #include "person_msgs/msg/detail/person__struct.h"
 
 
-// Include directives for member types
-// Member `name`
-#include "rosidl_runtime_c/string_functions.h"
-
 #ifdef __cplusplus
 extern "C"
 {
@@ -35,16 +31,16 @@ void Person__rosidl_typesupport_introspection_c__Person_fini_function(void * mes
   person_msgs__msg__Person__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember Person__rosidl_typesupport_introspection_c__Person_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember Person__rosidl_typesupport_introspection_c__Person_message_member_array[4] = {
   {
-    "name",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    "light",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(person_msgs__msg__Person, name),  // bytes offset in struct
+    offsetof(person_msgs__msg__Person, light),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -52,14 +48,44 @@ static rosidl_typesupport_introspection_c__MessageMember Person__rosidl_typesupp
     NULL  // resize(index) function pointer
   },
   {
-    "age",  // name
+    "value",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(person_msgs__msg__Person, age),  // bytes offset in struct
+    offsetof(person_msgs__msg__Person, value),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "color",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(person_msgs__msg__Person, color),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "total",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(person_msgs__msg__Person, total),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -71,7 +97,7 @@ static rosidl_typesupport_introspection_c__MessageMember Person__rosidl_typesupp
 static const rosidl_typesupport_introspection_c__MessageMembers Person__rosidl_typesupport_introspection_c__Person_message_members = {
   "person_msgs__msg",  // message namespace
   "Person",  // message name
-  2,  // number of fields
+  4,  // number of fields
   sizeof(person_msgs__msg__Person),
   Person__rosidl_typesupport_introspection_c__Person_message_member_array,  // message members
   Person__rosidl_typesupport_introspection_c__Person_init_function,  // function to initialize message memory (memory has to be allocated)

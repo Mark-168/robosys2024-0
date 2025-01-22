@@ -17,15 +17,13 @@ extern "C"
 
 // Constants defined in the message
 
-// Include directives for member types
-// Member 'name'
-#include "rosidl_runtime_c/string.h"
-
 // Struct defined in msg/Person in the package person_msgs.
 typedef struct person_msgs__msg__Person
 {
-  rosidl_runtime_c__String name;
-  uint8_t age;
+  uint8_t light;
+  uint8_t value;
+  uint8_t color;
+  uint8_t total;
 } person_msgs__msg__Person;
 
 // Struct for a sequence of person_msgs__msg__Person.

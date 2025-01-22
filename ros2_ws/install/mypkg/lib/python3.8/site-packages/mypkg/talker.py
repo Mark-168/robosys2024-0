@@ -5,17 +5,14 @@ from person_msgs.srv import Query
 rclpy.init()
 node = Node("talker")
 
-
 def cb(request, response):
-    if request.name == "武田遊星":
-        response.age = 25
+    if request.light < 45 :
+        response.color = 0
     else:
-        response.age = 255
+        response.color = 9
 
     return response
-
 
 def main():
     srv = node.create_service(Query, "query", cb)
     rclpy.spin(node)
-

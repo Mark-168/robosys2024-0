@@ -53,17 +53,17 @@ class Person(metaclass=Metaclass_Person):
     """Message class 'Person'."""
 
     __slots__ = [
-        '_name',
-        '_age',
+        '_light',
+        '_color',
     ]
 
     _fields_and_field_types = {
-        'name': 'string',
-        'age': 'uint8',
+        'light': 'uint8',
+        'color': 'uint8',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
     )
 
@@ -71,8 +71,8 @@ class Person(metaclass=Metaclass_Person):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.name = kwargs.get('name', str())
-        self.age = kwargs.get('age', int())
+        self.light = kwargs.get('light', int())
+        self.color = kwargs.get('color', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -103,9 +103,9 @@ class Person(metaclass=Metaclass_Person):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.name != other.name:
+        if self.light != other.light:
             return False
-        if self.age != other.age:
+        if self.color != other.color:
             return False
         return True
 
@@ -115,29 +115,31 @@ class Person(metaclass=Metaclass_Person):
         return copy(cls._fields_and_field_types)
 
     @property
-    def name(self):
-        """Message field 'name'."""
-        return self._name
+    def light(self):
+        """Message field 'light'."""
+        return self._light
 
-    @name.setter
-    def name(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, str), \
-                "The 'name' field must be of type 'str'"
-        self._name = value
-
-    @property
-    def age(self):
-        """Message field 'age'."""
-        return self._age
-
-    @age.setter
-    def age(self, value):
+    @light.setter
+    def light(self, value):
         if __debug__:
             assert \
                 isinstance(value, int), \
-                "The 'age' field must be of type 'int'"
+                "The 'light' field must be of type 'int'"
             assert value >= 0 and value < 256, \
-                "The 'age' field must be an unsigned integer in [0, 255]"
-        self._age = value
+                "The 'light' field must be an unsigned integer in [0, 255]"
+        self._light = value
+
+    @property
+    def color(self):
+        """Message field 'color'."""
+        return self._color
+
+    @color.setter
+    def color(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'color' field must be of type 'int'"
+            assert value >= 0 and value < 256, \
+                "The 'color' field must be an unsigned integer in [0, 255]"
+        self._color = value

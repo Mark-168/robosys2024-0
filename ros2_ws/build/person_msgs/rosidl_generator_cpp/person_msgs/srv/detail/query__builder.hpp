@@ -20,16 +20,32 @@ namespace srv
 namespace builder
 {
 
-class Init_Query_Request_name
+class Init_Query_Request_value
 {
 public:
-  Init_Query_Request_name()
+  explicit Init_Query_Request_value(::person_msgs::srv::Query_Request & msg)
+  : msg_(msg)
+  {}
+  ::person_msgs::srv::Query_Request value(::person_msgs::srv::Query_Request::_value_type arg)
+  {
+    msg_.value = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::person_msgs::srv::Query_Request msg_;
+};
+
+class Init_Query_Request_light
+{
+public:
+  Init_Query_Request_light()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::person_msgs::srv::Query_Request name(::person_msgs::srv::Query_Request::_name_type arg)
+  Init_Query_Request_value light(::person_msgs::srv::Query_Request::_light_type arg)
   {
-    msg_.name = std::move(arg);
-    return std::move(msg_);
+    msg_.light = std::move(arg);
+    return Init_Query_Request_value(msg_);
   }
 
 private:
@@ -47,7 +63,7 @@ template<>
 inline
 auto build<::person_msgs::srv::Query_Request>()
 {
-  return person_msgs::srv::builder::Init_Query_Request_name();
+  return person_msgs::srv::builder::Init_Query_Request_light();
 }
 
 }  // namespace person_msgs
@@ -62,16 +78,32 @@ namespace srv
 namespace builder
 {
 
-class Init_Query_Response_age
+class Init_Query_Response_total
 {
 public:
-  Init_Query_Response_age()
+  explicit Init_Query_Response_total(::person_msgs::srv::Query_Response & msg)
+  : msg_(msg)
+  {}
+  ::person_msgs::srv::Query_Response total(::person_msgs::srv::Query_Response::_total_type arg)
+  {
+    msg_.total = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::person_msgs::srv::Query_Response msg_;
+};
+
+class Init_Query_Response_color
+{
+public:
+  Init_Query_Response_color()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::person_msgs::srv::Query_Response age(::person_msgs::srv::Query_Response::_age_type arg)
+  Init_Query_Response_total color(::person_msgs::srv::Query_Response::_color_type arg)
   {
-    msg_.age = std::move(arg);
-    return std::move(msg_);
+    msg_.color = std::move(arg);
+    return Init_Query_Response_total(msg_);
   }
 
 private:
@@ -89,7 +121,7 @@ template<>
 inline
 auto build<::person_msgs::srv::Query_Response>()
 {
-  return person_msgs::srv::builder::Init_Query_Response_age();
+  return person_msgs::srv::builder::Init_Query_Response_color();
 }
 
 }  // namespace person_msgs

@@ -34,8 +34,6 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // name
-#include "rosidl_runtime_c/string_functions.h"  // name
 
 // forward declare type support functions
 
@@ -51,18 +49,9 @@ static bool _Query_Request__cdr_serialize(
     return false;
   }
   const _Query_Request__ros_msg_type * ros_message = static_cast<const _Query_Request__ros_msg_type *>(untyped_ros_message);
-  // Field name: name
+  // Field name: light
   {
-    const rosidl_runtime_c__String * str = &ros_message->name;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
+    cdr << ros_message->light;
   }
 
   return true;
@@ -77,20 +66,9 @@ static bool _Query_Request__cdr_deserialize(
     return false;
   }
   _Query_Request__ros_msg_type * ros_message = static_cast<_Query_Request__ros_msg_type *>(untyped_ros_message);
-  // Field name: name
+  // Field name: light
   {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->name.data) {
-      rosidl_runtime_c__String__init(&ros_message->name);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->name,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'name'\n");
-      return false;
-    }
+    cdr >> ros_message->light;
   }
 
   return true;
@@ -110,10 +88,12 @@ size_t get_serialized_size_person_msgs__srv__Query_Request(
   (void)padding;
   (void)wchar_size;
 
-  // field.name name
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->name.size + 1);
+  // field.name light
+  {
+    size_t item_size = sizeof(ros_message->light);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -138,16 +118,11 @@ size_t max_serialized_size_person_msgs__srv__Query_Request(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: name
+  // member: light
   {
     size_t array_size = 1;
 
-    full_bounded = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   return current_alignment - initial_alignment;
@@ -239,9 +214,9 @@ static bool _Query_Response__cdr_serialize(
     return false;
   }
   const _Query_Response__ros_msg_type * ros_message = static_cast<const _Query_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: age
+  // Field name: color
   {
-    cdr << ros_message->age;
+    cdr << ros_message->color;
   }
 
   return true;
@@ -256,9 +231,9 @@ static bool _Query_Response__cdr_deserialize(
     return false;
   }
   _Query_Response__ros_msg_type * ros_message = static_cast<_Query_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: age
+  // Field name: color
   {
-    cdr >> ros_message->age;
+    cdr >> ros_message->color;
   }
 
   return true;
@@ -278,9 +253,9 @@ size_t get_serialized_size_person_msgs__srv__Query_Response(
   (void)padding;
   (void)wchar_size;
 
-  // field.name age
+  // field.name color
   {
-    size_t item_size = sizeof(ros_message->age);
+    size_t item_size = sizeof(ros_message->color);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -308,7 +283,7 @@ size_t max_serialized_size_person_msgs__srv__Query_Response(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: age
+  // member: color
   {
     size_t array_size = 1;
 

@@ -53,22 +53,22 @@ class Query_Request(metaclass=Metaclass_Query_Request):
     """Message class 'Query_Request'."""
 
     __slots__ = [
-        '_name',
+        '_light',
     ]
 
     _fields_and_field_types = {
-        'name': 'string',
+        'light': 'uint8',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.name = kwargs.get('name', str())
+        self.light = kwargs.get('light', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -99,7 +99,7 @@ class Query_Request(metaclass=Metaclass_Query_Request):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.name != other.name:
+        if self.light != other.light:
             return False
         return True
 
@@ -109,17 +109,19 @@ class Query_Request(metaclass=Metaclass_Query_Request):
         return copy(cls._fields_and_field_types)
 
     @property
-    def name(self):
-        """Message field 'name'."""
-        return self._name
+    def light(self):
+        """Message field 'light'."""
+        return self._light
 
-    @name.setter
-    def name(self, value):
+    @light.setter
+    def light(self, value):
         if __debug__:
             assert \
-                isinstance(value, str), \
-                "The 'name' field must be of type 'str'"
-        self._name = value
+                isinstance(value, int), \
+                "The 'light' field must be of type 'int'"
+            assert value >= 0 and value < 256, \
+                "The 'light' field must be an unsigned integer in [0, 255]"
+        self._light = value
 
 
 # Import statements for member types
@@ -173,11 +175,11 @@ class Query_Response(metaclass=Metaclass_Query_Response):
     """Message class 'Query_Response'."""
 
     __slots__ = [
-        '_age',
+        '_color',
     ]
 
     _fields_and_field_types = {
-        'age': 'uint8',
+        'color': 'uint8',
     }
 
     SLOT_TYPES = (
@@ -188,7 +190,7 @@ class Query_Response(metaclass=Metaclass_Query_Response):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.age = kwargs.get('age', int())
+        self.color = kwargs.get('color', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -219,7 +221,7 @@ class Query_Response(metaclass=Metaclass_Query_Response):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.age != other.age:
+        if self.color != other.color:
             return False
         return True
 
@@ -229,19 +231,19 @@ class Query_Response(metaclass=Metaclass_Query_Response):
         return copy(cls._fields_and_field_types)
 
     @property
-    def age(self):
-        """Message field 'age'."""
-        return self._age
+    def color(self):
+        """Message field 'color'."""
+        return self._color
 
-    @age.setter
-    def age(self, value):
+    @color.setter
+    def color(self, value):
         if __debug__:
             assert \
                 isinstance(value, int), \
-                "The 'age' field must be of type 'int'"
+                "The 'color' field must be of type 'int'"
             assert value >= 0 and value < 256, \
-                "The 'age' field must be an unsigned integer in [0, 255]"
-        self._age = value
+                "The 'color' field must be an unsigned integer in [0, 255]"
+        self._color = value
 
 
 class Metaclass_Query(type):

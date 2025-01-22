@@ -1,3 +1,2 @@
-string name
-uint8 age
-
+uint8 light
+uint8 color

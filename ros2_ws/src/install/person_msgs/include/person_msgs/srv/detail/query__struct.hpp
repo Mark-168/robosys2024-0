@@ -37,30 +37,30 @@ struct Query_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->name = "";
+      this->light = 0;
     }
   }
 
   explicit Query_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : name(_alloc)
   {
+    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->name = "";
+      this->light = 0;
     }
   }
 
   // field types and members
-  using _name_type =
-    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
-  _name_type name;
+  using _light_type =
+    uint8_t;
+  _light_type light;
 
   // setters for named parameter idiom
-  Type & set__name(
-    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
+  Type & set__light(
+    const uint8_t & _arg)
   {
-    this->name = _arg;
+    this->light = _arg;
     return *this;
   }
 
@@ -106,7 +106,7 @@ struct Query_Request_
   // comparison operators
   bool operator==(const Query_Request_ & other) const
   {
-    if (this->name != other.name) {
+    if (this->light != other.light) {
       return false;
     }
     return true;
@@ -151,7 +151,7 @@ struct Query_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->age = 0;
+      this->color = 0;
     }
   }
 
@@ -161,20 +161,20 @@ struct Query_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->age = 0;
+      this->color = 0;
     }
   }
 
   // field types and members
-  using _age_type =
+  using _color_type =
     uint8_t;
-  _age_type age;
+  _color_type color;
 
   // setters for named parameter idiom
-  Type & set__age(
+  Type & set__color(
     const uint8_t & _arg)
   {
-    this->age = _arg;
+    this->color = _arg;
     return *this;
   }
 
@@ -220,7 +220,7 @@ struct Query_Response_
   // comparison operators
   bool operator==(const Query_Response_ & other) const
   {
-    if (this->age != other.age) {
+    if (this->color != other.color) {
       return false;
     }
     return true;

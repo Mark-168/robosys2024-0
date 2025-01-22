@@ -1,8 +1,8 @@
-# Install script for directory: /home/koara/ros2_ws/src/build/person_msgs/person_msgs__py
+# Install script for directory: /home/koara/robosys2024-4/ros2_ws/src/build/person_msgs/person_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/koara/ros2_ws/src/install/person_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/koara/robosys2024-4/ros2_ws/src/install/person_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
