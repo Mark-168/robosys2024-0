@@ -1,0 +1,186 @@
+[0.184s] Invoking command in '/home/koara/robosys2024-4/ros2_ws/build/person_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/koara/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --build /home/koara/robosys2024-4/ros2_ws/build/person_msgs -- -j12 -l12
+[0.191s] CMake Error: The current CMakeCache.txt directory /home/koara/robosys2024-4/ros2_ws/build/person_msgs/CMakeCache.txt is different than the directory /home/koara/ros2_ws/build/person_msgs where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[0.207s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.227s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.228s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.379s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.380s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.382s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.386s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.578s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.618s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[2.727s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[4.878s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.884s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.905s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[4.905s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[4.926s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.926s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[4.926s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[4.945s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.951s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.953s] -- Configured cppcheck include dirs: 
+[4.953s] -- Configured cppcheck exclude dirs and/or files: 
+[4.958s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.958s] -- Configured cpplint exclude dirs and/or files: 
+[4.959s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.960s] -- Added test 'lint_cmake' to check CMake code style
+[4.961s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[4.965s] -- Added test 'uncrustify' to check C / C++ code style
+[4.966s] -- Configured uncrustify additional arguments: 
+[4.966s] -- Added test 'xmllint' to check XML markup files
+[4.971s] -- Configuring done
+[5.004s] -- Generating done
+[5.007s] -- Build files have been written to: /home/koara/ros2_ws/build/person_msgs
+[5.046s] [ 10%] Built target person_msgs__rosidl_generator_c
+[5.046s] [ 12%] Built target person_msgs__cpp
+[5.068s] [ 23%] Built target person_msgs__rosidl_typesupport_introspection_cpp
+[5.069s] [ 43%] Built target person_msgs__rosidl_typesupport_c
+[5.069s] [ 43%] Built target person_msgs__rosidl_typesupport_introspection_c
+[5.090s] [ 53%] Built target person_msgs__rosidl_typesupport_cpp
+[5.093s] [ 64%] Built target person_msgs__rosidl_typesupport_fastrtps_cpp
+[5.118s] [ 74%] Built target person_msgs__rosidl_typesupport_fastrtps_c
+[5.138s] [ 74%] Built target person_msgs
+[5.156s] [ 76%] Built target person_msgs__py
+[5.182s] [ 84%] Built target person_msgs__python
+[5.208s] [100%] Built target person_msgs__rosidl_typesupport_fastrtps_c__pyext
+[5.208s] [100%] Built target person_msgs__rosidl_typesupport_c__pyext
+[5.208s] [100%] Built target person_msgs__rosidl_typesupport_introspection_c__pyext
+[5.224s] Invoked command in '/home/koara/robosys2024-4/ros2_ws/build/person_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/koara/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --build /home/koara/robosys2024-4/ros2_ws/build/person_msgs -- -j12 -l12
+[5.302s] Invoking command in '/home/koara/robosys2024-4/ros2_ws/build/person_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/koara/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --install /home/koara/robosys2024-4/ros2_ws/build/person_msgs
+[5.310s] -- Install configuration: ""
+[5.310s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/ament_index/resource_index/rosidl_interfaces/person_msgs
+[5.310s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs
+[5.310s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv
+[5.311s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail
+[5.311s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__type_support.h
+[5.312s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__struct.h
+[5.312s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__functions.h
+[5.312s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__functions.c
+[5.313s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/query.h
+[5.313s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg
+[5.313s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_generator_c__visibility_control.h
+[5.313s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/person.h
+[5.313s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+[5.313s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__functions.c
+[5.313s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__functions.h
+[5.313s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.h
+[5.313s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__struct.h
+[5.314s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/environment/library_path.sh
+[5.314s] -- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/environment/library_path.dsv
+[5.314s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_generator_c.so
+[5.314s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs
+[5.314s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv
+[5.314s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail
+[5.315s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__rosidl_typesupport_fastrtps_c.h
+[5.315s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg
+[5.315s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+[5.315s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_fastrtps_c.h
+[5.315s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.315s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_fastrtps_c.so
+[5.315s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs
+[5.316s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv
+[5.316s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail
+[5.316s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/dds_fastrtps
+[5.316s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__rosidl_typesupport_fastrtps_cpp.hpp
+[5.316s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg
+[5.316s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.317s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+[5.317s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/dds_fastrtps
+[5.317s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_fastrtps_cpp.hpp
+[5.317s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_fastrtps_cpp.so
+[5.317s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs
+[5.317s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv
+[5.317s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail
+[5.317s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__type_support.c
+[5.317s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__rosidl_typesupport_introspection_c.h
+[5.317s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.c
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_introspection_c.so
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_c.so
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__traits.hpp
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__struct.hpp
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__type_support.hpp
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__builder.hpp
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/query.hpp
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__struct.hpp
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.hpp
+[5.318s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__builder.hpp
+[5.319s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__traits.hpp
+[5.319s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.319s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/person.hpp
+[5.319s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs
+[5.319s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv
+[5.319s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail
+[5.319s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__rosidl_typesupport_introspection_cpp.hpp
+[5.319s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__type_support.cpp
+[5.319s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg
+[5.319s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+[5.319s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_introspection_cpp.hpp
+[5.319s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.cpp
+[5.319s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_introspection_cpp.so
+[5.319s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_cpp.so
+[5.319s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/environment/pythonpath.sh
+[5.319s] -- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/environment/pythonpath.dsv
+[5.319s] -- Installing: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/__init__.py
+[5.341s] Compiling '/home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/__init__.py'...
+[5.345s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg
+[5.345s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/__init__.py
+[5.345s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/_person_s.c
+[5.346s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/_person.py
+[5.346s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/srv
+[5.346s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/srv/_query.py
+[5.346s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/srv/_query_s.c
+[5.346s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/srv/__init__.py
+[5.346s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[5.346s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[5.347s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[5.347s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/libperson_msgs__python.so
+[5.347s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/msg/Person.idl
+[5.347s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/srv/Query.idl
+[5.348s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/msg/Person.msg
+[5.348s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/srv/Query.srv
+[5.348s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/srv/Query_Request.msg
+[5.348s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/srv/Query_Response.msg
+[5.348s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/ament_index/resource_index/package_run_dependencies/person_msgs
+[5.349s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/ament_index/resource_index/parent_prefix_path/person_msgs
+[5.349s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/environment/ament_prefix_path.sh
+[5.349s] -- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/environment/ament_prefix_path.dsv
+[5.349s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/environment/path.sh
+[5.349s] -- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/environment/path.dsv
+[5.349s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/local_setup.bash
+[5.350s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/local_setup.sh
+[5.350s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/local_setup.zsh
+[5.350s] -- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/local_setup.dsv
+[5.350s] -- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/package.dsv
+[5.350s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/ament_index/resource_index/packages/person_msgs
+[5.351s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_generator_cExport.cmake
+[5.351s] -- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_generator_cExport-noconfig.cmake
+[5.351s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cExport.cmake
+[5.351s] -- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.351s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cExport.cmake
+[5.352s] -- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[5.352s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_generator_cppExport.cmake
+[5.352s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[5.352s] -- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.352s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cppExport.cmake
+[5.352s] -- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[5.353s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/rosidl_cmake-extras.cmake
+[5.353s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.353s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[5.353s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[5.353s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.353s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.353s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.353s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgsConfig.cmake
+[5.353s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgsConfig-version.cmake
+[5.353s] -- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/package.xml
+[5.356s] Invoked command in '/home/koara/robosys2024-4/ros2_ws/build/person_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/koara/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --install /home/koara/robosys2024-4/ros2_ws/build/person_msgs

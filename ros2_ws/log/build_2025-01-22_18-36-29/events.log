@@ -1,0 +1,279 @@
+[0.000000] (-) TimerEvent: {}
+[0.001214] (mypkg) JobQueued: {'identifier': 'mypkg', 'dependencies': OrderedDict()}
+[0.001266] (person_msgs) JobQueued: {'identifier': 'person_msgs', 'dependencies': OrderedDict()}
+[0.001311] (mypkg) JobStarted: {'identifier': 'mypkg'}
+[0.018432] (person_msgs) JobStarted: {'identifier': 'person_msgs'}
+[0.099700] (-) TimerEvent: {}
+[0.200087] (-) TimerEvent: {}
+[0.220864] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'cmake'}
+[0.222459] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'build'}
+[0.223244] (person_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/koara/robosys2024-4/ros2_ws/build/person_msgs', '--', '-j12', '-l12'], 'cwd': '/home/koara/robosys2024-4/ros2_ws/build/person_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'koara'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/koara/ros2_ws/install/person_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/koara'), ('OLDPWD', '/home/koara/robosys2024-4/ros2_ws/src/mypkg/test'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/koara/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'koara'), ('NAME', 'DESKTOP-BNTSF3L'), ('WSL_INTEROP', '/run/WSL/2302_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu20.04LTS_2004.6.16.0_x64__79rhkp1fndgsc:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/MinGW/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/koara/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/koara/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/koara/ros2_ws/install/person_msgs:/home/koara/ros2_ws/install/mypkg:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/koara/robosys2024-4/ros2_ws/build/person_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages:/home/koara/ros2_ws/install/mypkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/koara/ros2_ws/install/person_msgs:/home/koara/ros2_ws/install/mypkg:/opt/ros/foxy'), ('WSLENV', '')]), 'shell': False}
+[0.300257] (-) TimerEvent: {}
+[0.348084] (person_msgs) StderrLine: {'line': b'CMake Error: The current CMakeCache.txt directory /home/koara/robosys2024-4/ros2_ws/build/person_msgs/CMakeCache.txt is different than the directory /home/koara/ros2_ws/build/person_msgs where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt\n'}
+[0.382145] (person_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.400372] (-) TimerEvent: {}
+[0.406284] (person_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.406465] (person_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.500490] (-) TimerEvent: {}
+[0.591587] (person_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[0.593707] (person_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.597798] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.600599] (-) TimerEvent: {}
+[0.603951] (person_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.686373] (mypkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/mypkg', 'build', '--build-base', '/home/koara/robosys2024-4/ros2_ws/build/mypkg/build', 'install', '--record', '/home/koara/robosys2024-4/ros2_ws/build/mypkg/install.log', '--install-scripts', '$base/lib/mypkg', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/koara/robosys2024-4/ros2_ws/src/mypkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'koara', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/koara/ros2_ws/install/person_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/koara', 'OLDPWD': '/home/koara/robosys2024-4/ros2_ws/src/mypkg/test', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-20.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/koara/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'koara', 'NAME': 'DESKTOP-BNTSF3L', 'WSL_INTEROP': '/run/WSL/2302_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu20.04LTS_2004.6.16.0_x64__79rhkp1fndgsc:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/MinGW/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/koara/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/koara/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/koara/ros2_ws/install/person_msgs:/home/koara/ros2_ws/install/mypkg:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/koara/robosys2024-4/ros2_ws/build/mypkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/koara/robosys2024-4/ros2_ws/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/koara/robosys2024-4/ros2_ws/install/mypkg/lib/python3.8/site-packages:/home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages:/home/koara/ros2_ws/install/mypkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/koara/ros2_ws/install/person_msgs', 'WSLENV': ''}, 'shell': False}
+[0.700759] (-) TimerEvent: {}
+[0.801127] (-) TimerEvent: {}
+[0.887570] (mypkg) StdoutLine: {'line': b'running egg_info\n'}
+[0.887981] (mypkg) StdoutLine: {'line': b'writing ../../build/mypkg/mypkg.egg-info/PKG-INFO\n'}
+[0.888224] (mypkg) StdoutLine: {'line': b'writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt\n'}
+[0.888519] (mypkg) StdoutLine: {'line': b'writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt\n'}
+[0.888838] (mypkg) StdoutLine: {'line': b'writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt\n'}
+[0.888924] (mypkg) StdoutLine: {'line': b'writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt\n'}
+[0.901245] (-) TimerEvent: {}
+[0.925281] (mypkg) StdoutLine: {'line': b"reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[0.927005] (mypkg) StdoutLine: {'line': b"writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[0.927183] (mypkg) StdoutLine: {'line': b'running build\n'}
+[0.927500] (mypkg) StdoutLine: {'line': b'running build_py\n'}
+[0.927799] (mypkg) StdoutLine: {'line': b'running install\n'}
+[0.929074] (mypkg) StdoutLine: {'line': b'running install_lib\n'}
+[0.931374] (mypkg) StdoutLine: {'line': b'running install_data\n'}
+[0.931814] (mypkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.933256] (mypkg) StdoutLine: {'line': b"removing '/home/koara/robosys2024-4/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[0.934124] (mypkg) StdoutLine: {'line': b'Copying ../../build/mypkg/mypkg.egg-info to /home/koara/robosys2024-4/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info\n'}
+[0.935884] (mypkg) StdoutLine: {'line': b'running install_scripts\n'}
+[0.952187] (mypkg) StdoutLine: {'line': b'Installing listener script to /home/koara/robosys2024-4/ros2_ws/install/mypkg/lib/mypkg\n'}
+[0.952650] (mypkg) StdoutLine: {'line': b'Installing talker script to /home/koara/robosys2024-4/ros2_ws/install/mypkg/lib/mypkg\n'}
+[0.952873] (mypkg) StdoutLine: {'line': b"writing list of installed files to '/home/koara/robosys2024-4/ros2_ws/build/mypkg/install.log'\n"}
+[0.978953] (mypkg) CommandEnded: {'returncode': 0}
+[1.000993] (mypkg) JobEnded: {'identifier': 'mypkg', 'rc': 0}
+[1.001394] (-) TimerEvent: {}
+[1.101671] (-) TimerEvent: {}
+[1.202039] (-) TimerEvent: {}
+[1.302469] (-) TimerEvent: {}
+[1.402855] (-) TimerEvent: {}
+[1.503218] (-) TimerEvent: {}
+[1.603571] (-) TimerEvent: {}
+[1.703942] (-) TimerEvent: {}
+[1.804331] (-) TimerEvent: {}
+[1.904778] (-) TimerEvent: {}
+[2.005107] (-) TimerEvent: {}
+[2.105475] (-) TimerEvent: {}
+[2.205941] (-) TimerEvent: {}
+[2.306352] (-) TimerEvent: {}
+[2.406688] (-) TimerEvent: {}
+[2.507023] (-) TimerEvent: {}
+[2.607398] (-) TimerEvent: {}
+[2.707754] (-) TimerEvent: {}
+[2.808110] (-) TimerEvent: {}
+[2.908545] (-) TimerEvent: {}
+[3.008918] (-) TimerEvent: {}
+[3.029014] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.081031] (person_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[3.109048] (-) TimerEvent: {}
+[3.201673] (person_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[3.209178] (-) TimerEvent: {}
+[3.309518] (-) TimerEvent: {}
+[3.409908] (-) TimerEvent: {}
+[3.510274] (-) TimerEvent: {}
+[3.610661] (-) TimerEvent: {}
+[3.711018] (-) TimerEvent: {}
+[3.811372] (-) TimerEvent: {}
+[3.911740] (-) TimerEvent: {}
+[4.012113] (-) TimerEvent: {}
+[4.112549] (-) TimerEvent: {}
+[4.212965] (-) TimerEvent: {}
+[4.313315] (-) TimerEvent: {}
+[4.413693] (-) TimerEvent: {}
+[4.514106] (-) TimerEvent: {}
+[4.614484] (-) TimerEvent: {}
+[4.715184] (-) TimerEvent: {}
+[4.815531] (-) TimerEvent: {}
+[4.915869] (-) TimerEvent: {}
+[5.016276] (-) TimerEvent: {}
+[5.116618] (-) TimerEvent: {}
+[5.216994] (-) TimerEvent: {}
+[5.317371] (-) TimerEvent: {}
+[5.380813] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.389869] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.410195] (person_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[5.411088] (person_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[5.417470] (-) TimerEvent: {}
+[5.433638] (person_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.433833] (person_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[5.433898] (person_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[5.467781] (person_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.480160] (person_msgs) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.481383] (person_msgs) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[5.481537] (person_msgs) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.486625] (person_msgs) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[5.486783] (person_msgs) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[5.487794] (person_msgs) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[5.489480] (person_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.490579] (person_msgs) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[5.495467] (person_msgs) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.495547] (person_msgs) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.496561] (person_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.509768] (person_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.517605] (-) TimerEvent: {}
+[5.563086] (person_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[5.566901] (person_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/koara/ros2_ws/build/person_msgs\n'}
+[5.617747] (-) TimerEvent: {}
+[5.621647] (person_msgs) StdoutLine: {'line': b'[  7%] Built target person_msgs__cpp\n'}
+[5.621978] (person_msgs) StdoutLine: {'line': b'[ 12%] Built target person_msgs__rosidl_generator_c\n'}
+[5.650066] (person_msgs) StdoutLine: {'line': b'[ 43%] Built target person_msgs__rosidl_typesupport_c\n'}
+[5.650515] (person_msgs) StdoutLine: {'line': b'[ 43%] Built target person_msgs__rosidl_typesupport_cpp\n'}
+[5.650619] (person_msgs) StdoutLine: {'line': b'[ 46%] Built target person_msgs__rosidl_typesupport_introspection_cpp\n'}
+[5.650681] (person_msgs) StdoutLine: {'line': b'[ 53%] Built target person_msgs__rosidl_typesupport_introspection_c\n'}
+[5.651844] (person_msgs) StdoutLine: {'line': b'[ 64%] Built target person_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[5.680237] (person_msgs) StdoutLine: {'line': b'[ 74%] Built target person_msgs__rosidl_typesupport_fastrtps_c\n'}
+[5.700832] (person_msgs) StdoutLine: {'line': b'[ 74%] Built target person_msgs\n'}
+[5.717866] (-) TimerEvent: {}
+[5.724932] (person_msgs) StdoutLine: {'line': b'[ 76%] Built target person_msgs__py\n'}
+[5.754678] (person_msgs) StdoutLine: {'line': b'[ 84%] Built target person_msgs__python\n'}
+[5.781918] (person_msgs) StdoutLine: {'line': b'[ 94%] Built target person_msgs__rosidl_typesupport_c__pyext\n'}
+[5.782103] (person_msgs) StdoutLine: {'line': b'[ 94%] Built target person_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[5.782666] (person_msgs) StdoutLine: {'line': b'[100%] Built target person_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.794452] (person_msgs) CommandEnded: {'returncode': 0}
+[5.818006] (-) TimerEvent: {}
+[5.862749] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'install'}
+[5.872724] (person_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/koara/robosys2024-4/ros2_ws/build/person_msgs'], 'cwd': '/home/koara/robosys2024-4/ros2_ws/build/person_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'koara'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/koara/ros2_ws/install/person_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/koara'), ('OLDPWD', '/home/koara/robosys2024-4/ros2_ws/src/mypkg/test'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/koara/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'koara'), ('NAME', 'DESKTOP-BNTSF3L'), ('WSL_INTEROP', '/run/WSL/2302_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu20.04LTS_2004.6.16.0_x64__79rhkp1fndgsc:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/MinGW/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/koara/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/koara/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/koara/ros2_ws/install/person_msgs:/home/koara/ros2_ws/install/mypkg:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/koara/robosys2024-4/ros2_ws/build/person_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages:/home/koara/ros2_ws/install/mypkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/koara/ros2_ws/install/person_msgs:/home/koara/ros2_ws/install/mypkg:/opt/ros/foxy'), ('WSLENV', '')]), 'shell': False}
+[5.883366] (person_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.883799] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/ament_index/resource_index/rosidl_interfaces/person_msgs\n'}
+[5.883915] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[5.883986] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv\n'}
+[5.884165] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail\n'}
+[5.884482] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__type_support.h\n'}
+[5.884680] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__struct.h\n'}
+[5.884854] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__functions.h\n'}
+[5.885097] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__functions.c\n'}
+[5.885384] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/query.h\n'}
+[5.885445] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[5.885495] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.885555] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/person.h\n'}
+[5.885603] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[5.885651] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__functions.c\n'}
+[5.885727] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__functions.h\n'}
+[5.885835] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.h\n'}
+[5.885895] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__struct.h\n'}
+[5.885950] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/environment/library_path.sh\n'}
+[5.886004] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/environment/library_path.dsv\n'}
+[5.886200] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_generator_c.so\n'}
+[5.886404] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[5.886700] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv\n'}
+[5.886957] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail\n'}
+[5.887324] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__rosidl_typesupport_fastrtps_c.h\n'}
+[5.887469] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[5.887782] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[5.887859] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_fastrtps_c.h\n'}
+[5.887910] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.888605] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[5.888893] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[5.889080] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv\n'}
+[5.889388] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail\n'}
+[5.889889] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/dds_fastrtps\n'}
+[5.890131] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.890377] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[5.890479] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.890665] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[5.890895] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/dds_fastrtps\n'}
+[5.891017] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.891872] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.892121] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[5.892432] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv\n'}
+[5.892778] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail\n'}
+[5.893051] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__type_support.c\n'}
+[5.893203] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__rosidl_typesupport_introspection_c.h\n'}
+[5.893357] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[5.893571] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[5.893841] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h\n'}
+[5.893910] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.c\n'}
+[5.893967] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.894323] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_introspection_c.so\n'}
+[5.895026] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_c.so\n'}
+[5.895215] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[5.895430] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv\n'}
+[5.895678] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail\n'}
+[5.896113] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__traits.hpp\n'}
+[5.896349] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__struct.hpp\n'}
+[5.896528] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__type_support.hpp\n'}
+[5.896655] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__builder.hpp\n'}
+[5.896838] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/query.hpp\n'}
+[5.897234] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[5.897417] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[5.897688] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__struct.hpp\n'}
+[5.897879] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.hpp\n'}
+[5.898063] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__builder.hpp\n'}
+[5.898225] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__traits.hpp\n'}
+[5.898375] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.898552] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/person.hpp\n'}
+[5.898713] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[5.898868] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv\n'}
+[5.899020] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail\n'}
+[5.899243] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.899493] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__type_support.cpp\n'}
+[5.899557] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[5.899606] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[5.899654] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.899701] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.cpp\n'}
+[5.899783] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.900060] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_cpp.so\n'}
+[5.900259] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/environment/pythonpath.sh\n'}
+[5.900411] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/environment/pythonpath.dsv\n'}
+[5.900624] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/__init__.py\n'}
+[5.918115] (-) TimerEvent: {}
+[5.927290] (person_msgs) StdoutLine: {'line': b"Compiling '/home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/__init__.py'...\n"}
+[5.930888] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg\n'}
+[5.931354] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/__init__.py\n'}
+[5.931836] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/_person_s.c\n'}
+[5.931935] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/_person.py\n'}
+[5.931990] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/srv\n'}
+[5.932039] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/srv/_query.py\n'}
+[5.932097] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/srv/_query_s.c\n'}
+[5.932145] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/srv/__init__.py\n'}
+[5.932848] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[5.933703] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[5.934760] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[5.935352] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/lib/libperson_msgs__python.so\n'}
+[5.935542] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/msg/Person.idl\n'}
+[5.935810] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/srv/Query.idl\n'}
+[5.935977] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/msg/Person.msg\n'}
+[5.936242] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/srv/Query.srv\n'}
+[5.936406] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/srv/Query_Request.msg\n'}
+[5.936494] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/srv/Query_Response.msg\n'}
+[5.936655] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/ament_index/resource_index/package_run_dependencies/person_msgs\n'}
+[5.936844] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/ament_index/resource_index/parent_prefix_path/person_msgs\n'}
+[5.937031] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/environment/ament_prefix_path.sh\n'}
+[5.937243] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/environment/ament_prefix_path.dsv\n'}
+[5.937496] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/environment/path.sh\n'}
+[5.937761] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/environment/path.dsv\n'}
+[5.937838] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/local_setup.bash\n'}
+[5.937976] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/local_setup.sh\n'}
+[5.938150] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/local_setup.zsh\n'}
+[5.938303] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/local_setup.dsv\n'}
+[5.938454] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/package.dsv\n'}
+[5.938613] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/ament_index/resource_index/packages/person_msgs\n'}
+[5.938789] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_generator_cExport.cmake\n'}
+[5.939113] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.939216] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.939331] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.939575] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cExport.cmake\n'}
+[5.939643] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.939866] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_generator_cppExport.cmake\n'}
+[5.940295] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.940529] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.940863] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[5.940993] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.941247] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[5.941586] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.941741] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.942044] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.942143] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.942213] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.942277] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.942356] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgsConfig.cmake\n'}
+[5.942420] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgsConfig-version.cmake\n'}
+[5.942479] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/koara/ros2_ws/install/person_msgs/share/person_msgs/package.xml\n'}
+[5.944608] (person_msgs) CommandEnded: {'returncode': 0}
+[6.018264] (-) TimerEvent: {}
+[6.032493] (person_msgs) JobEnded: {'identifier': 'person_msgs', 'rc': 0}
+[6.033847] (-) EventReactorShutdown: {}
